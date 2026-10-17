@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Professional Contributions · Clarisa Caballero-Ignacio</title>
+<meta name="description" content="Projects, presentations, grants, awards, featured writing, and media coverage.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#20232d;--muted:#626977;--accent:#8e2d49;--accent-deep:#6b2039;--tint:#fcf1f4;--border:#e9dfe3;--background:#fffafa;--white:#ffffff}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--background);color:var(--ink);font:14.5px/1.57 'Inter',system-ui,-apple-system,sans-serif;-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4,p{margin-top:0}
+h1,h2,h3,h4{font-family:'Space Grotesk','Inter',sans-serif;letter-spacing:-.015em;color:#22232a}
+h1{font-size:clamp(2rem,3.5vw,2.55rem);line-height:1.19;margin-bottom:12px}
+h2{font-size:1.46rem;line-height:1.35;margin-bottom:16px}
+h3{font-size:1.05rem;line-height:1.45}
+p{color:#525865;margin-bottom:12px}
+a{color:inherit;text-decoration:none}
+a:hover{color:var(--accent)}
+a:focus-visible,button:focus-visible{outline:3px solid #bd8799;outline-offset:3px}
+.container{max-width:1060px;margin:0 auto;padding:0 24px}
+.section{padding:29px 0;scroll-margin-top:74px}
+.eyebrow{display:block;font-size:.69rem;letter-spacing:.14em;font-weight:700;color:var(--accent);text-transform:uppercase;margin-bottom:8px}
+.muted{color:var(--muted)}
+/* Navigation */
+.top{position:sticky;top:0;z-index:10;background:rgba(255,250,250,.96);border-bottom:1px solid var(--border);backdrop-filter:blur(12px)}
+.navbar{min-height:62px;display:flex;align-items:center;justify-content:space-between;gap:22px}
+.brand{font-size:.96rem;white-space:nowrap;font-weight:700;font-family:'Space Grotesk',sans-serif;color:#24232b;display:flex;align-items:center;gap:9px}
+.brand-dot{width:9px;height:9px;border-radius:50%;background:#a93b56;box-shadow:0 0 0 3px #f4dfe6}
+.nav-links{display:flex;align-items:center;gap:7px;flex-wrap:wrap;justify-content:flex-end}
+.nav-links a{font-size:.8rem;font-weight:600;color:#51505b;padding:8px 10px;border-radius:6px}
+.nav-links a:hover,.nav-links a[aria-current='page']{color:var(--accent);background:#fbedf1}
+.nav-links .cv-link{border:1px solid #bb8293;color:var(--accent-deep);padding:7px 12px;margin-left:7px;white-space:nowrap}
+.nav-toggle{display:none;border:1px solid var(--border);background:#fff;color:var(--ink);padding:7px 11px;border-radius:7px;font-size:.9rem}
+/* Home */
+.hero{padding:47px 0 36px;background:linear-gradient(115deg,#fffafa 20%,#fff2f5 100%);border-bottom:1px solid var(--border)}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1fr) 218px;align-items:center;gap:36px}
+.hello{color:var(--accent);font-size:.86rem;font-weight:600;margin-bottom:12px}
+.hero .tagline{font-size:.94rem;line-height:1.72;max-width:710px;margin-bottom:19px}
+.gradient-text{color:#a02b47}
+.actions{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:8px;border-radius:6px;padding:9px 15px;font-size:.84rem;font-weight:650;border:1px solid var(--accent-deep)}
+.btn.primary{background:var(--accent-deep);color:#fff}
+.btn.primary:hover{background:#862b46;color:#fff}
+.btn.secondary{color:var(--accent-deep);background:#fff}
+.btn.secondary:hover{background:var(--tint)}
+.portrait{width:215px;height:215px;border:5px solid white;outline:1px solid #f1dae1;border-radius:50%;background:#f7e9ee;display:grid;place-items:center;overflow:hidden;box-shadow:0 8px 25px #68233d12;color:#95516b;font:700 3rem 'Space Grotesk',sans-serif}
+.portrait img{grid-area:1/1;width:100%;height:100%;object-fit:cover;object-position:center 23%;border-radius:50%}
+.portrait span{grid-area:1/1}
+.chips{display:flex;gap:6px;flex-wrap:wrap;margin-top:17px}
+.chip{padding:3px 9px;border:1px solid #edd9e0;border-radius:99px;background:#fff6f8;color:#843650;font-size:.72rem;font-weight:550}
+.bio{max-width:850px}
+.bio p{font-size:.92rem;line-height:1.72;margin-bottom:10px}
+/* Explore cards */
+.explore{border-top:1px solid var(--border);padding-top:21px;margin-top:23px}
+.explore h2{font-size:1.17rem;margin-bottom:14px}
+.link-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.nav-card{display:flex;flex-direction:column;justify-content:space-between;min-height:88px;padding:12px 15px;border-radius:9px;border:1px solid #e9d9df;background:linear-gradient(120deg,#fff,#fff7fa);transition:transform .16s,border-color .16s,box-shadow .16s}
+.nav-card:hover{border-color:#bf8d9f;transform:translateY(-2px);box-shadow:0 5px 16px #68233d13}
+.nav-card-top{display:flex;justify-content:space-between;align-items:start;gap:7px;color:var(--accent);font-size:.65rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em}
+.nav-card-arrow{font-size:1rem}
+.nav-card-title{font-size:.89rem;font-weight:650;line-height:1.3;color:#22232a;margin:10px 0 0}
+/* CV */
+.cv-strip{border:1px solid #e6cdd5;background:#fff5f7;display:flex;align-items:center;justify-content:space-between;gap:18px;padding:16px 20px;border-radius:9px;margin:10px 0 0}
+.cv-strip h2{font-size:1.05rem;margin:0 0 2px}
+.cv-strip p{margin:0;font-size:.83rem}
+.cv-strip a{color:var(--accent-deep);border-bottom:1px solid currentColor;white-space:nowrap;font-size:.83rem;font-weight:650}
+/* Subpages */
+.page-head{padding:33px 0 20px;border-bottom:1px solid var(--border);background:linear-gradient(120deg,#fffafa,#fff4f6)}
+.page-head h1{font-size:2rem;margin-bottom:8px}
+.page-head p{font-size:.88rem;max-width:780px;line-height:1.66;margin:0}
+.page-layout{display:grid;grid-template-columns:187px minmax(0,1fr);gap:34px;align-items:start;padding-top:22px;padding-bottom:34px}
+.toc{position:sticky;top:88px;border-left:2px solid #e8c7d1;padding-left:14px}
+.toc h2{font-size:.72rem;text-transform:uppercase;letter-spacing:.12em;color:var(--accent);margin:0 0 9px}
+.toc a{display:block;color:#5d6370;font-size:.79rem;line-height:1.45;padding:6px 0}
+.toc a:hover{color:var(--accent)}
+.content-section{margin-bottom:30px;scroll-margin-top:85px}
+.content-section h2{font-size:1.2rem;margin:0 0 12px;padding:0 0 9px;border-bottom:1px solid #dccbd1}
+.content-section h3.subhead{font-size:1rem;margin:23px 0 7px}
+.content-section .lead{font-size:.84rem;line-height:1.58;color:#6b6972;margin:0 0 11px}
+.cv-entry{display:grid;grid-template-columns:74px minmax(0,1fr);gap:15px;border-bottom:1px solid var(--border);padding:11px 0 13px}
+.cv-entry:last-child{border-bottom:0}
+.cv-year{color:#77717a;font-size:.79rem;white-space:nowrap;padding-top:1px}
+.cv-entry h3{font-family:'Inter',sans-serif;font-size:.91rem;line-height:1.45;font-weight:700;margin:0 0 4px;color:#25232b;overflow-wrap:anywhere}
+.cv-entry p,.cv-entry .meta{font-size:.82rem;line-height:1.52;color:#535a65;margin:3px 0}
+.cv-entry .venue{color:#6e6570;font-style:italic}
+.cv-entry .doi{color:#66616c;margin-top:5px;font-size:.78rem}
+.cv-entry .doi a,.cv-entry .inline-link{color:var(--accent-deep);text-decoration:underline;text-decoration-color:#b78e9c;text-underline-offset:3px;overflow-wrap:anywhere}
+.cv-entry .inline-link{display:inline-block;font-size:.8rem;margin-top:7px}
+.cv-entry .project-name{font-weight:500;font-style:italic}
+.section-pad{padding-bottom:22px}
+/* Contact */
+.contact-row{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:11px;max-width:700px}
+.contact-card{display:flex;align-items:center;gap:12px;border:1px solid var(--border);padding:12px 14px;border-radius:8px;background:#fff}
+.contact-card:hover{border-color:#b67f92;background:#fff8fa}
+.contact-icon{background:#86344b;color:white;border-radius:7px;width:32px;height:32px;display:grid;place-items:center;font-weight:700;flex:none}
+.contact-label{color:var(--accent);font-size:.7rem;text-transform:uppercase;letter-spacing:.07em;font-weight:700}
+.contact-value{font-size:.83rem;color:#3c3d46;overflow-wrap:anywhere}
+footer{padding:18px 0;border-top:1px solid var(--border);text-align:center;color:#837681;font-size:.76rem}
+/* Responsive */
+@media(max-width:820px){.page-layout{grid-template-columns:1fr;gap:17px}.toc{position:static;display:flex;flex-wrap:wrap;align-items:center;gap:0 15px;border-left:0;border-bottom:1px solid var(--border);padding:0 0 10px}.toc h2{flex-basis:100%;margin-bottom:0}.toc a{font-size:.77rem}.link-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.hero-grid{grid-template-columns:minmax(0,1fr) 170px;gap:24px}.portrait{width:168px;height:168px}}
+@media(max-width:640px){.navbar{min-height:57px}.brand{font-size:.84rem}.nav-toggle{display:block}.nav-links{display:none;position:absolute;top:100%;left:0;right:0;padding:10px 22px 17px;background:#fffafb;border-bottom:1px solid var(--border);box-shadow:0 8px 16px #23142013;align-items:stretch;flex-direction:column;gap:3px}.nav-links.open{display:flex}.nav-links a{padding:9px 10px}.nav-links .cv-link{margin-left:0}.hero{padding:32px 0}.hero-grid{grid-template-columns:1fr;gap:17px}.portrait{width:145px;height:145px}.hero-grid .portrait{order:-1}.hero .tagline{font-size:.91rem}.page-head{padding:24px 0 18px}.page-head h1{font-size:1.65rem}.section{padding:24px 0}.contact-row{grid-template-columns:1fr}.cv-strip{align-items:start;flex-direction:column;gap:9px}.cv-entry{grid-template-columns:67px minmax(0,1fr);gap:11px}}
+@media(max-width:410px){.link-grid{grid-template-columns:1fr}.nav-card{min-height:72px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.nav-card{transition:none}}
+</style>
+</head>
+<body>
+<nav class="top" aria-label="Main navigation"><div class="container navbar">
+      <a href="index.html" class="brand"><span class="brand-dot" aria-hidden="true"></span>Clarisa Caballero-Ignacio</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="navLinks" onclick="toggleMenu(this)">Menu ☰</button>
+      <div class="nav-links" id="navLinks"><a href="index.html">Home</a><a href="research.html">Research & Publications</a><a href="contributions.html" aria-current="page">Professional Contributions</a><a href="index.html#contact">Contact</a><a class="cv-link" href="ClarisaCaballeroI_public_cv.pdf" target="_blank" rel="noopener noreferrer">CV (PDF) ↗</a></div>
+    </div></nav>
+<main><header class="page-head"><div class="container"><span class="eyebrow">Professional Contributions</span><h1>Professional Contributions</h1></div></header>
+<div class="container page-layout"><aside class="toc" aria-label="On this page"><h2>On this page</h2><a href="#projects">Selected Projects &amp; Initiatives</a><a href="#presentations">Presentations &amp; Invited Panels</a><a href="#awards">Grants, Awards &amp; Honors</a><a href="#media">News &amp; Media Features</a><a href="#articles">Selected Writing &amp; Featured Stories</a></aside><div><section class="content-section" id="projects"><h2>Selected Projects &amp; Initiatives</h2><p class="lead">Technical, operational, and community-focused projects spanning analytics, web development, student engagement, and scientific outreach.</p><article class="cv-entry"><div class="cv-year">2024</div><div><h3>Student Engagement &amp; Retention Tracking System</h3><p class="venue">Data Systems · Oregon State University</p><p>Built a data-driven tracking and reporting system for MANRRS and SACNAS to monitor recruitment, retention, and engagement, informing participation trends and organizational growth.</p><a class="inline-link" href="#awards">Awards and recognition ↗</a></div></article>
+<article class="cv-entry"><div class="cv-year">2024</div><div><h3>Building Community and Networks for All</h3><p class="venue">Web Development · Oregon State University</p><p>Designed and developed a Drupal-based website to centralize resources, programming information, and community engagement opportunities for students and faculty affiliated with MANRRS and SACNAS initiatives.</p><a class="inline-link" href="https://agsci.oregonstate.edu/manrrs/building-community-and-networks-all" target="_blank" rel="noopener noreferrer">View project ↗</a></div></article></section><section class="content-section" id="presentations"><h2>Presentations &amp; Invited Panels</h2><p class="lead">Invited talks and panels on student leadership, succession planning, inclusive excellence, and meeting students where they are.</p><article class="cv-entry"><div class="cv-year">Apr 2025</div><div><h3>Chapter Advisor Workshop I — Passing the Torch: Succession Planning for MANRRS E-Boards</h3><p class="meta">Invited Panelist</p><p class="venue">MANRRS National Conference · Memphis, TN</p></div></article>
+<article class="cv-entry"><div class="cv-year">Feb 2025</div><div><h3>Real-World Research in Times of Disengagement Means Meeting Students Where They Are</h3><p class="meta">Oral Presentation</p><p class="venue">Association of Public and Land-grant Universities (APLU) · Tucson, AZ</p></div></article>
+<article class="cv-entry"><div class="cv-year">Feb 2025</div><div><h3>Beyond Borders – A Dialogue Empowering the Voices of Our Immigrants</h3><p class="meta">Presentation</p><p class="venue">Community Engagement &amp; Leadership / Association of Latin American Students (ALAS) · Corvallis, OR</p><p>Presented in collaboration with Community Engagement &amp; Leadership and the Association of Latin American Students.</p></div></article>
+<article class="cv-entry"><div class="cv-year">Nov 2023</div><div><h3>Chapter Best Practices</h3><p class="meta">Invited Panelist</p><p class="venue">MANRRS Region Six Cluster · Las Vegas, NV</p></div></article>
+<article class="cv-entry"><div class="cv-year">Nov 2016</div><div><h3>Motivating the Middle: Lessons Learned from a Re-Established Chapter</h3><p class="meta">Invited Panelist</p><p class="venue">SACNAS NDiSTEM Conference · Long Beach, CA</p></div></article></section><section class="content-section" id="awards"><h2>Grants, Awards &amp; Honors</h2><h3 class="subhead" id="grants">Grants</h3><article class="cv-entry"><div class="cv-year">2023</div><div><h3>USDA NIFA Multicultural Scholars Program</h3><p class="meta"><strong>Co-Principal Investigator</strong> · $250,000</p><p class="venue">College of Agricultural Sciences · BioResource Research · Oregon State University</p></div></article>
+<article class="cv-entry"><div class="cv-year">2020</div><div><h3>USDA NIFA Multicultural Scholars Program</h3><p class="meta"><strong>Grant Project Lead</strong> · $200,000</p><p class="venue">College of Agricultural Sciences · College Assistance Migrant Program (CAMP) · Oregon State University</p><p>Facilitated the mentorship program and led implementation, reporting, and programming in collaboration with the principal investigator.</p></div></article><h3 class="subhead" id="honors">Awards &amp; Honors</h3><article class="cv-entry"><div class="cv-year">2026</div><div><h3>State of Inclusive Excellence at Oregon State University</h3><p>Recognition for advancing OSU's Inclusive Excellence mission through creativity, innovation, and determination.</p></div></article>
+<article class="cv-entry"><div class="cv-year">2025</div><div><h3>Club Advisor of the Year</h3><p class="meta">College of Agricultural Sciences · Oregon State University</p></div></article>
+<article class="cv-entry"><div class="cv-year">2025</div><div><h3>SACNAS Chapter of the Year Award</h3><p class="meta">Society for the Advancement of Chicanos/Hispanics and Native Americans in Science (SACNAS)</p><p>National recognition honoring the chapter's impact and programming.</p></div></article>
+<article class="cv-entry"><div class="cv-year">2025</div><div><h3>MANRRS Chapter of the Year Award</h3><p class="meta">Minorities in Agriculture, Natural Resources, and Related Sciences (MANRRS)</p><p>National recognition for outstanding chapter leadership and engagement.</p></div></article>
+<article class="cv-entry"><div class="cv-year">2025</div><div><h3>Diversity Commitment Award — MANRRS Chapter at OSU</h3><p class="meta">College of Agricultural Sciences · Oregon State University</p><p>Recognition of the MANRRS chapter's contributions to diversity and community engagement.</p></div></article>
+<article class="cv-entry"><div class="cv-year">2023</div><div><h3>Diversity Commitment Award — SACNAS at OSU</h3><p class="meta">College of Agricultural Sciences · Oregon State University</p><p>Recognition of the SACNAS chapter at Oregon State University.</p></div></article>
+<article class="cv-entry"><div class="cv-year">2018, 2019</div><div><h3>FSES Challenge Coin</h3><p class="meta">Food Safety and Environmental Stewardship Program (FSES)</p><p>Awarded twice for service and contributions to the program.</p></div></article></section><section class="content-section" id="media"><h2>News &amp; Media Features</h2><p class="lead">Research projects and collaborative work featured in the press and public outreach.</p><article class="cv-entry"><div class="cv-year">Jul 2022</div><div><h3>Chemical Exposure for Houston Residents Increased Directly After Hurricane Harvey, Study Shows</h3><p class="venue">Houston Public Media</p><p>Reporting on research showing that Houston residents' chemical exposures rose immediately after Hurricane Harvey, assessed with silicone wristband samplers.</p><a class="inline-link" href="https://www.houstonpublicmedia.org/articles/news/health-science/2022/07/29/429358/chemical-exposure-for-houston-residents-increased-directly-after-hurricane-harvey-study-shows/" target="_blank" rel="noopener noreferrer">View article ↗</a></div></article>
+<article class="cv-entry"><div class="cv-year">Aug 2020</div><div><h3>Firefighters Exposed to More Potentially Harmful Chemicals Than Previously Thought</h3><p class="venue">Occupational Health &amp; Safety</p><p>Coverage of the Oregon State University–led study finding that on-duty firefighters face higher exposure to PAHs, a family of cancer-linked compounds, measured using silicone dog-tag passive samplers.</p><a class="inline-link" href="https://ohsonline.com/articles/2020/08/24/firefighters-exposed-to-more-potentially-harmful-chemicals-than-previously-thought.aspx" target="_blank" rel="noopener noreferrer">View article ↗</a></div></article></section><section class="content-section" id="articles"><h2>Selected Writing &amp; Featured Stories</h2><p class="lead">Articles and features highlighting student leadership, STEM access, agricultural sciences, and community impact.</p><article class="cv-entry"><div class="cv-year">2025</div><div><h3>MANRRS 2025 Chapter of the Year Award</h3><p class="venue">Oregon State University · College of Agricultural Sciences</p><p>Authored and published organizational event features highlighting student achievement, chapter impact, leadership development, and community engagement initiatives connected to MANRRS programming and recognition.</p><a class="inline-link" href="https://agsci.oregonstate.edu/education/manrrs-osu-named-2025-chapter-year" target="_blank" rel="noopener noreferrer">View article ↗</a></div></article>
+<article class="cv-entry"><div class="cv-year">2025</div><div><h3>2025 SACNAS Chapter of the Year Award</h3><p class="venue">Oregon State University · College of Agricultural Sciences</p><p>Featured chapter achievements and organizational impact supporting inclusive excellence, STEM advocacy, mentorship, and community engagement.</p><a class="inline-link" href="https://agsci.oregonstate.edu/thesource/sept-2025/students/2025-sacnas-awards" target="_blank" rel="noopener noreferrer">View feature ↗</a></div></article>
+<article class="cv-entry"><div class="cv-year">2025</div><div><h3>Inspiring the Next Generation: Junior MANRRS Summer Leadership Institute</h3><p class="venue">Oregon State University · College of Agricultural Sciences</p><p>Highlighted the experiences of high school students participating in the Junior MANRRS Summer Leadership Institute, focusing on mentorship, STEM exposure, leadership development, and agricultural sciences engagement.</p><a class="inline-link" href="https://agsci.oregonstate.edu/manrrs/inspiring-next-generation-junior-manrrs-summer-leadership-institute-program" target="_blank" rel="noopener noreferrer">View article ↗</a></div></article>
+<article class="cv-entry"><div class="cv-year">2023</div><div><h3>Ancient and Modern-Day Agriculture in the Heart of Mexico</h3><p class="venue">Oregon State University · College of Agricultural Sciences</p><p>Highlighted the experiences of a short-term study abroad program in Mexico, where I served as a co-leader.</p><a class="inline-link" href="https://agsci.oregonstate.edu/education/2023-ancient-and-modern-day-agriculture-heart-mexico" target="_blank" rel="noopener noreferrer">View article ↗</a></div></article></section></div></div></main>
+<footer><div class="container">© <span data-year>2026</span> Clarisa. All rights reserved.</div></footer>
+<script>
+function toggleMenu(button){const menu=document.getElementById('navLinks'); const open=menu.classList.toggle('open'); button.setAttribute('aria-expanded',String(open));}
+document.querySelectorAll('#navLinks a').forEach(link=>link.addEventListener('click',()=>{document.getElementById('navLinks').classList.remove('open');document.querySelector('.nav-toggle').setAttribute('aria-expanded','false');}));
+document.querySelectorAll('[data-year]').forEach(e=>e.textContent=new Date().getFullYear());
+</script>
+</body>
+</html>
