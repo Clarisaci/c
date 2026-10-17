@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Research &amp; Publications · Clarisa Caballero-Ignacio</title>
+<meta name="description" content="Peer-reviewed publications, environmental chemistry research contributions, research reports, and undergraduate thesis.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#20232d;--muted:#626977;--accent:#8e2d49;--accent-deep:#6b2039;--tint:#fcf1f4;--border:#e9dfe3;--background:#fffafa;--white:#ffffff}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--background);color:var(--ink);font:14.5px/1.57 'Inter',system-ui,-apple-system,sans-serif;-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4,p{margin-top:0}
+h1,h2,h3,h4{font-family:'Space Grotesk','Inter',sans-serif;letter-spacing:-.015em;color:#22232a}
+h1{font-size:clamp(2rem,3.5vw,2.55rem);line-height:1.19;margin-bottom:12px}
+h2{font-size:1.46rem;line-height:1.35;margin-bottom:16px}
+h3{font-size:1.05rem;line-height:1.45}
+p{color:#525865;margin-bottom:12px}
+a{color:inherit;text-decoration:none}
+a:hover{color:var(--accent)}
+a:focus-visible,button:focus-visible{outline:3px solid #bd8799;outline-offset:3px}
+.container{max-width:1060px;margin:0 auto;padding:0 24px}
+.section{padding:29px 0;scroll-margin-top:74px}
+.eyebrow{display:block;font-size:.69rem;letter-spacing:.14em;font-weight:700;color:var(--accent);text-transform:uppercase;margin-bottom:8px}
+.muted{color:var(--muted)}
+/* Navigation */
+.top{position:sticky;top:0;z-index:10;background:rgba(255,250,250,.96);border-bottom:1px solid var(--border);backdrop-filter:blur(12px)}
+.navbar{min-height:62px;display:flex;align-items:center;justify-content:space-between;gap:22px}
+.brand{font-size:.96rem;white-space:nowrap;font-weight:700;font-family:'Space Grotesk',sans-serif;color:#24232b;display:flex;align-items:center;gap:9px}
+.brand-dot{width:9px;height:9px;border-radius:50%;background:#a93b56;box-shadow:0 0 0 3px #f4dfe6}
+.nav-links{display:flex;align-items:center;gap:7px;flex-wrap:wrap;justify-content:flex-end}
+.nav-links a{font-size:.8rem;font-weight:600;color:#51505b;padding:8px 10px;border-radius:6px}
+.nav-links a:hover,.nav-links a[aria-current='page']{color:var(--accent);background:#fbedf1}
+.nav-links .cv-link{border:1px solid #bb8293;color:var(--accent-deep);padding:7px 12px;margin-left:7px;white-space:nowrap}
+.nav-toggle{display:none;border:1px solid var(--border);background:#fff;color:var(--ink);padding:7px 11px;border-radius:7px;font-size:.9rem}
+/* Home */
+.hero{padding:47px 0 36px;background:linear-gradient(115deg,#fffafa 20%,#fff2f5 100%);border-bottom:1px solid var(--border)}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1fr) 218px;align-items:center;gap:36px}
+.hello{color:var(--accent);font-size:.86rem;font-weight:600;margin-bottom:12px}
+.hero .tagline{font-size:.94rem;line-height:1.72;max-width:710px;margin-bottom:19px}
+.gradient-text{color:#a02b47}
+.actions{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:8px;border-radius:6px;padding:9px 15px;font-size:.84rem;font-weight:650;border:1px solid var(--accent-deep)}
+.btn.primary{background:var(--accent-deep);color:#fff}
+.btn.primary:hover{background:#862b46;color:#fff}
+.btn.secondary{color:var(--accent-deep);background:#fff}
+.btn.secondary:hover{background:var(--tint)}
+.portrait{width:215px;height:215px;border:5px solid white;outline:1px solid #f1dae1;border-radius:50%;background:#f7e9ee;display:grid;place-items:center;overflow:hidden;box-shadow:0 8px 25px #68233d12;color:#95516b;font:700 3rem 'Space Grotesk',sans-serif}
+.portrait img{grid-area:1/1;width:100%;height:100%;object-fit:cover;object-position:center 23%;border-radius:50%}
+.portrait span{grid-area:1/1}
+.chips{display:flex;gap:6px;flex-wrap:wrap;margin-top:17px}
+.chip{padding:3px 9px;border:1px solid #edd9e0;border-radius:99px;background:#fff6f8;color:#843650;font-size:.72rem;font-weight:550}
+.bio{max-width:850px}
+.bio p{font-size:.92rem;line-height:1.72;margin-bottom:10px}
+/* Explore cards */
+.explore{border-top:1px solid var(--border);padding-top:21px;margin-top:23px}
+.explore h2{font-size:1.17rem;margin-bottom:14px}
+.link-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.nav-card{display:flex;flex-direction:column;justify-content:space-between;min-height:88px;padding:12px 15px;border-radius:9px;border:1px solid #e9d9df;background:linear-gradient(120deg,#fff,#fff7fa);transition:transform .16s,border-color .16s,box-shadow .16s}
+.nav-card:hover{border-color:#bf8d9f;transform:translateY(-2px);box-shadow:0 5px 16px #68233d13}
+.nav-card-top{display:flex;justify-content:space-between;align-items:start;gap:7px;color:var(--accent);font-size:.65rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em}
+.nav-card-arrow{font-size:1rem}
+.nav-card-title{font-size:.89rem;font-weight:650;line-height:1.3;color:#22232a;margin:10px 0 0}
+/* CV */
+.cv-strip{border:1px solid #e6cdd5;background:#fff5f7;display:flex;align-items:center;justify-content:space-between;gap:18px;padding:16px 20px;border-radius:9px;margin:10px 0 0}
+.cv-strip h2{font-size:1.05rem;margin:0 0 2px}
+.cv-strip p{margin:0;font-size:.83rem}
+.cv-strip a{color:var(--accent-deep);border-bottom:1px solid currentColor;white-space:nowrap;font-size:.83rem;font-weight:650}
+/* Subpages */
+.page-head{padding:33px 0 20px;border-bottom:1px solid var(--border);background:linear-gradient(120deg,#fffafa,#fff4f6)}
+.page-head h1{font-size:2rem;margin-bottom:8px}
+.page-head p{font-size:.88rem;max-width:780px;line-height:1.66;margin:0}
+.page-layout{display:grid;grid-template-columns:187px minmax(0,1fr);gap:34px;align-items:start;padding-top:22px;padding-bottom:34px}
+.toc{position:sticky;top:88px;border-left:2px solid #e8c7d1;padding-left:14px}
+.toc h2{font-size:.72rem;text-transform:uppercase;letter-spacing:.12em;color:var(--accent);margin:0 0 9px}
+.toc a{display:block;color:#5d6370;font-size:.79rem;line-height:1.45;padding:6px 0}
+.toc a:hover{color:var(--accent)}
+.content-section{margin-bottom:30px;scroll-margin-top:85px}
+.content-section h2{font-size:1.2rem;margin:0 0 12px;padding:0 0 9px;border-bottom:1px solid #dccbd1}
+.content-section h3.subhead{font-size:1rem;margin:23px 0 7px}
+.content-section .lead{font-size:.84rem;line-height:1.58;color:#6b6972;margin:0 0 11px}
+.cv-entry{display:grid;grid-template-columns:74px minmax(0,1fr);gap:15px;border-bottom:1px solid var(--border);padding:11px 0 13px}
+.cv-entry:last-child{border-bottom:0}
+.cv-year{color:#77717a;font-size:.79rem;white-space:nowrap;padding-top:1px}
+.cv-entry h3{font-family:'Inter',sans-serif;font-size:.91rem;line-height:1.45;font-weight:700;margin:0 0 4px;color:#25232b;overflow-wrap:anywhere}
+.cv-entry p,.cv-entry .meta{font-size:.82rem;line-height:1.52;color:#535a65;margin:3px 0}
+.cv-entry .venue{color:#6e6570;font-style:italic}
+.cv-entry .doi{color:#66616c;margin-top:5px;font-size:.78rem}
+.cv-entry .doi a,.cv-entry .inline-link{color:var(--accent-deep);text-decoration:underline;text-decoration-color:#b78e9c;text-underline-offset:3px;overflow-wrap:anywhere}
+.cv-entry .inline-link{display:inline-block;font-size:.8rem;margin-top:7px}
+.cv-entry .project-name{font-weight:500;font-style:italic}
+.section-pad{padding-bottom:22px}
+/* Contact */
+.contact-row{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:11px;max-width:700px}
+.contact-card{display:flex;align-items:center;gap:12px;border:1px solid var(--border);padding:12px 14px;border-radius:8px;background:#fff}
+.contact-card:hover{border-color:#b67f92;background:#fff8fa}
+.contact-icon{background:#86344b;color:white;border-radius:7px;width:32px;height:32px;display:grid;place-items:center;font-weight:700;flex:none}
+.contact-label{color:var(--accent);font-size:.7rem;text-transform:uppercase;letter-spacing:.07em;font-weight:700}
+.contact-value{font-size:.83rem;color:#3c3d46;overflow-wrap:anywhere}
+footer{padding:18px 0;border-top:1px solid var(--border);text-align:center;color:#837681;font-size:.76rem}
+/* Responsive */
+@media(max-width:820px){.page-layout{grid-template-columns:1fr;gap:17px}.toc{position:static;display:flex;flex-wrap:wrap;align-items:center;gap:0 15px;border-left:0;border-bottom:1px solid var(--border);padding:0 0 10px}.toc h2{flex-basis:100%;margin-bottom:0}.toc a{font-size:.77rem}.link-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.hero-grid{grid-template-columns:minmax(0,1fr) 170px;gap:24px}.portrait{width:168px;height:168px}}
+@media(max-width:640px){.navbar{min-height:57px}.brand{font-size:.84rem}.nav-toggle{display:block}.nav-links{display:none;position:absolute;top:100%;left:0;right:0;padding:10px 22px 17px;background:#fffafb;border-bottom:1px solid var(--border);box-shadow:0 8px 16px #23142013;align-items:stretch;flex-direction:column;gap:3px}.nav-links.open{display:flex}.nav-links a{padding:9px 10px}.nav-links .cv-link{margin-left:0}.hero{padding:32px 0}.hero-grid{grid-template-columns:1fr;gap:17px}.portrait{width:145px;height:145px}.hero-grid .portrait{order:-1}.hero .tagline{font-size:.91rem}.page-head{padding:24px 0 18px}.page-head h1{font-size:1.65rem}.section{padding:24px 0}.contact-row{grid-template-columns:1fr}.cv-strip{align-items:start;flex-direction:column;gap:9px}.cv-entry{grid-template-columns:67px minmax(0,1fr);gap:11px}}
+@media(max-width:410px){.link-grid{grid-template-columns:1fr}.nav-card{min-height:72px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.nav-card{transition:none}}
+</style>
+</head>
+<body>
+<nav class="top" aria-label="Main navigation"><div class="container navbar">
+      <a href="index.html" class="brand"><span class="brand-dot" aria-hidden="true"></span>Clarisa Caballero-Ignacio</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="navLinks" onclick="toggleMenu(this)">Menu ☰</button>
+      <div class="nav-links" id="navLinks"><a href="index.html">Home</a><a href="research.html" aria-current="page">Research & Publications</a><a href="contributions.html">Professional Contributions</a><a href="index.html#contact">Contact</a><a class="cv-link" href="ClarisaCaballeroI_public_cv.pdf" target="_blank" rel="noopener noreferrer">CV (PDF) ↗</a></div>
+    </div></nav>
+<main>
+<header class="page-head" id="research"><div class="container"><span class="eyebrow">Research</span><h1>Publications &amp; Research Contributions</h1>
+<p>Research spanning software security, artificial intelligence, neuroscience, and interdisciplinary scientific inquiry, from large-scale empirical analysis of AI-attributed code to experimental studies of cognition and the gut microbiome. Peer-reviewed research in software security and collaborative contributions to environmental chemistry studies involving solvent extraction, sample preparation, and quality control.</p>
+</div></header>
+<div class="container page-layout"><aside class="toc" aria-label="On this page"><h2>On this page</h2>
+<a href="#contributions">Peer-Reviewed Publications</a><a href="#collaborative">Collaborative Research Contributions</a><a href="#reports">Research Reports &amp; Undergraduate Thesis</a></aside><div>
+<section class="content-section" id="contributions"><h2>Peer-Reviewed Publications</h2>
+<article class="cv-entry"><div class="cv-year">2026</div><div><h3>Vulnerability Trends Across Open-Source AI-Attributed Code</h3><p class="authors"><strong>Caballero-Ignacio C</strong>, Stephens L, Sage J, Motwani M, Ma Z.</p><p class="venue">Proceedings of the 2nd Workshop on Explainable and Reliable Software Systems (EXPRESS ’26)</p><p class="doi">DOI: <a href="https://doi.org/10.1145/3842650.3843174" target="_blank" rel="noopener noreferrer">10.1145/3842650.3843174</a></p></div></article>
+</section><section class="content-section" id="collaborative"><h2>Collaborative Research Contributions</h2>
+<article class="cv-entry"><div class="cv-year">2024</div><div><h3>Assessing Wildfire Impact on Diffusive Flux of Parent and Alkylated PAHs: A Pilot Study of Soil–Air Chemical Movement Before, During, and After Wildfires</h3><p class="authors">O'Malley KE, Ghetu CC, Rohlman D, Anderson KA.</p><p class="venue">Environmental Science &amp; Technology</p><p class="doi">DOI: <a href="https://doi.org/10.1021/acs.est.4c09139" target="_blank" rel="noopener noreferrer">10.1021/acs.est.4c09139</a></p></div></article>
+<article class="cv-entry"><div class="cv-year">2023</div><div><h3>Silicone passive sampling used to identify novel dermal chemical exposures of firefighters and assess PPE innovations</h3><p class="authors">Bonner EM, Horn GP, Smith DL, Kerber S, Fent KW, Tidwell LG, Scott RP, Adams KA, Anderson KA.</p><p class="venue">International Journal of Hygiene and Environmental Health</p><p class="doi">DOI: <a href="https://doi.org/10.1016/j.ijheh.2022.114095" target="_blank" rel="noopener noreferrer">10.1016/j.ijheh.2022.114095</a></p></div></article>
+<article class="cv-entry"><div class="cv-year">2022</div><div><h3>Evaluating predictive relationships between wristbands and urine for assessment of personal PAH exposure</h3><p class="authors">Dixon H, Bramer LM, Scott RP, Calero L, Holmes D, Gibson EA, Cavalier HM, Rohlman D, Miller RL, Calafat AM, et al.</p><p class="venue">Environment International</p><p class="doi">DOI: <a href="https://doi.org/10.1016/j.envint.2022.107226" target="_blank" rel="noopener noreferrer">10.1016/j.envint.2022.107226</a></p></div></article>
+<article class="cv-entry"><div class="cv-year">2022</div><div><h3>Wildfire Impact on Indoor and Outdoor PAH Air Quality</h3><p class="authors">Ghetu CC, Rohlman D, Smith BW, Scott RP, Adams KA, Hoffman PD, Anderson KA.</p><p class="venue">Environmental Science &amp; Technology</p><p class="doi">DOI: <a href="https://doi.org/10.1021/acs.est.2c00619" target="_blank" rel="noopener noreferrer">10.1021/acs.est.2c00619</a></p></div></article>
+<article class="cv-entry"><div class="cv-year">2021</div><div><h3>Chemical exposures assessed via silicone wristbands and endogenous plasma metabolomics during pregnancy</h3><p class="authors">Doherty BT, McRitchie SL, Pathmasiri WW, Stewart DA, Kirchner D, Anderson KA, Gui J, Madan JC, Hoen AG, Sumner SJ, et al.</p><p class="venue">Journal of Exposure Science &amp; Environmental Epidemiology</p><p class="doi">DOI: <a href="https://doi.org/10.1038/s41370-021-00394-6" target="_blank" rel="noopener noreferrer">10.1038/s41370-021-00394-6</a></p></div></article>
+<article class="cv-entry"><div class="cv-year">2021</div><div><h3>Firefighter exposures to potential endocrine disrupting chemicals measured by military-style silicone dog tags</h3><p class="authors">Poutasse CM, Haddock CK, Poston WSC, Jahnke SA, Tidwell LG, Bonner EM, Hoffman PD, Anderson KA.</p><p class="venue">Environment International</p><p class="doi">DOI: <a href="https://doi.org/10.1016/j.envint.2021.106914" target="_blank" rel="noopener noreferrer">10.1016/j.envint.2021.106914</a></p></div></article>
+<article class="cv-entry"><div class="cv-year">2021</div><div><h3>Improvements in identification and quantitation of alkylated PAHs and forensic ratio sourcing</h3><p class="authors">Ghetu CC, Scott RP, Wilson GR, Liu-May R, Anderson KA.</p><p class="venue">Analytical and Bioanalytical Chemistry</p><p class="doi">DOI: <a href="https://doi.org/10.1007/s00216-020-03127-0" target="_blank" rel="noopener noreferrer">10.1007/s00216-020-03127-0</a></p></div></article>
+<article class="cv-entry"><div class="cv-year">2020</div><div><h3>Assessment of Multipollutant Exposures During Pregnancy Using Silicone Wristbands</h3><p class="authors">Doherty BT, Pearce JL, Anderson KA, Karagas MR, Romano ME.</p><p class="venue">Frontiers in Public Health</p><p class="doi">DOI: <a href="https://doi.org/10.3389/fpubh.2020.547239" target="_blank" rel="noopener noreferrer">10.3389/fpubh.2020.547239</a></p></div></article>
+<article class="cv-entry"><div class="cv-year">2020</div><div><h3>Discovery of firefighter chemical exposures using military-style silicone dog tags</h3><p class="authors">Poutasse CM, Poston WSC, Jahnke SA, Haddock CK, Tidwell LG, Hoffman PD, Anderson KA.</p><p class="venue">Environment International</p><p class="doi">DOI: <a href="https://doi.org/10.1016/j.envint.2020.105818" target="_blank" rel="noopener noreferrer">10.1016/j.envint.2020.105818</a></p></div></article>
+<article class="cv-entry"><div class="cv-year">2019</div><div><h3>Discovery of common chemical exposures across three continents using silicone wristbands</h3><p class="authors">Dixon H, Armstrong G, Barton ML, Bergmann AJ, Bondy M, Halbleib ML, Hamilton W, Haynes EN, Herbstman J, Hoffman PD, et al.</p><p class="venue">Royal Society Open Science</p><p class="doi">DOI: <a href="https://doi.org/10.1098/rsos.181836" target="_blank" rel="noopener noreferrer">10.1098/rsos.181836</a></p></div></article>
+<article class="cv-entry"><div class="cv-year">2019</div><div><h3>Silicone pet tags associate tris(1,3-dichloro-2-isopropyl) phosphate exposures with feline hyperthyroidism</h3><p class="authors">Poutasse CM, Herbstman J, Peterson ME, Gordon J, Soboroff P, Holmes D, Gonzalez D, Tidwell LG, Anderson KA.</p><p class="venue">Environmental Science &amp; Technology</p><p class="doi">DOI: <a href="https://doi.org/10.1021/acs.est.9b02226" target="_blank" rel="noopener noreferrer">10.1021/acs.est.9b02226</a></p></div></article>
+</section><section class="content-section" id="reports"><h2>Research Reports &amp; Undergraduate Thesis</h2>
+<article class="cv-entry"><div class="cv-year">2018</div><div><h3>Hurricane Harvey Wristband Study Update</h3><p class="meta">Oregon State University</p><p class="venue">Research Report / Project Update</p><a class="inline-link" href="https://fses.oregonstate.edu/file_store/public/Hurricane-Harvey-Aggregate-report.pdf" target="_blank" rel="noopener noreferrer">View report (PDF) ↗</a></div></article><article class="cv-entry"><div class="cv-year">2016–2017</div><div>
+<h3>Undergraduate Thesis Research</h3><p class="meta">Oregon State University · Corvallis, OR</p><p class="meta">Principal Investigator: Kathy Magnusson, Ph.D.</p>
+<p class="project-name">Assessment of Gut Microbiome Role in Diet-Related Changes in Cognition</p>
+<a class="inline-link" href="http://hdl.handle.net/1957/61164" target="_blank" rel="noopener noreferrer">View undergraduate thesis ↗</a>
+</div></article>
+</section></div></div>
+</main>
+<footer><div class="container">© <span data-year>2026</span> Clarisa. All rights reserved.</div></footer>
+<script>
+function toggleMenu(button){const menu=document.getElementById('navLinks'); const open=menu.classList.toggle('open'); button.setAttribute('aria-expanded',String(open));}
+document.querySelectorAll('#navLinks a').forEach(link=>link.addEventListener('click',()=>{document.getElementById('navLinks').classList.remove('open');document.querySelector('.nav-toggle').setAttribute('aria-expanded','false');}));
+document.querySelectorAll('[data-year]').forEach(e=>e.textContent=new Date().getFullYear());
+</script>
+</body>
+</html>
