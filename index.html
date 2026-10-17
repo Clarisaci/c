@@ -911,193 +911,290 @@
 
 
 
-  
-    <!-- ============ EXPLORE MY WORK ============ -->
+<!-- ============ EXPLORE MY WORK STYLES ============ -->
+<style>
 
-    <div class="about-explore">
+  /* Section */
+  #about .about-explore {
+    margin-top: 35px;
+    padding-top: 28px;
+    border-top: 1px solid rgba(127,127,127,0.2);
+  }
 
-      <div class="about-explore-header">
+  #about .about-explore h3 {
+    font-size: 1.25rem;
+    font-weight: 650;
+    margin: 0 0 20px;
+  }
 
-        <h3>Explore My Work</h3>
+  /* Small card grid */
+  #about .about-links {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 12px;
+  }
 
-        <p>
-          Research, scholarship, and professional contributions
-        </p>
+  /* Individual cards */
+  #about .about-link-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
+    min-height: 100px;
+    padding: 15px 17px;
+
+    background: linear-gradient(
+      145deg,
+      #ffffff 0%,
+      #fff7f9 100%
+    );
+
+    border: 1px solid #e8cdd5;
+    border-radius: 12px;
+
+    text-decoration: none;
+    color: #29252d;
+
+    box-shadow: 0 3px 10px rgba(91,43,61,0.035);
+
+    transition:
+      transform 0.2s ease,
+      box-shadow 0.2s ease,
+      border-color 0.2s ease;
+  }
+
+  /* Hover */
+  #about .about-link-card:hover {
+    transform: translateY(-3px);
+    border-color: #c998aa;
+    box-shadow: 0 8px 20px rgba(91,43,61,0.10);
+  }
+
+  #about .about-link-card:focus-visible {
+    outline: 3px solid #99516a;
+    outline-offset: 3px;
+  }
+
+  /* Top row */
+  #about .about-link-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+  }
+
+  /* Category */
+  #about .about-link-category {
+    font-size: 0.67rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #99516a;
+  }
+
+  /* Arrow */
+  #about .about-link-arrow {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 25px;
+    height: 25px;
+    flex-shrink: 0;
+
+    border-radius: 50%;
+    background: #f8e6ed;
+
+    font-size: 0.9rem;
+    color: #8f405e;
+
+    transition:
+      background 0.2s ease,
+      transform 0.2s ease;
+  }
+
+  #about .about-link-card:hover .about-link-arrow {
+    background: #f0cfdb;
+    transform: translate(2px, -2px);
+  }
+
+  /* Card titles */
+  #about .about-link-title {
+    font-family: 'Space Grotesk', 'Inter', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 600;
+    line-height: 1.35;
+    color: #29252d;
+
+    margin: 12px 0 0;
+  }
+
+  /* Tablet */
+  @media (max-width: 800px) {
+    #about .about-links {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  /* Mobile */
+  @media (max-width: 440px) {
+    #about .about-links {
+      grid-template-columns: 1fr;
+      gap: 10px;
+    }
+
+    #about .about-link-card {
+      min-height: 85px;
+      padding: 13px 16px;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    #about .about-link-card,
+    #about .about-link-arrow {
+      transition: none;
+    }
+  }
+
+</style>
+
+
+<!-- ============ EXPLORE MY WORK ============ -->
+
+<div class="about-explore">
+
+  <h3>Explore My Work</h3>
+
+  <nav class="about-links" aria-label="Explore my work">
+
+
+    <!-- RESEARCH EXPERIENCE -->
+    <a href="#research" class="about-link-card">
+
+      <div class="about-link-top">
+        <span class="about-link-category">
+          01 / Research
+        </span>
+        <span class="about-link-arrow" aria-hidden="true">↗</span>
       </div>
 
+      <h4 class="about-link-title">
+        Research Experience
+      </h4>
 
-      <nav class="about-links" aria-label="Explore my work">
+    </a>
 
 
-        <!-- RESEARCH EXPERIENCE -->
-        <a href="#research" class="about-link-card">
+    <!-- PUBLICATIONS -->
+    <a href="#contributions" class="about-link-card">
 
-          <div class="about-link-top">
+      <div class="about-link-top">
+        <span class="about-link-category">
+          02 / Scholarship
+        </span>
+        <span class="about-link-arrow" aria-hidden="true">↗</span>
+      </div>
 
-            <span class="about-link-category">
-              01 / Research
-            </span>
+      <h4 class="about-link-title">
+        Publications
+      </h4>
 
-            <span class="about-link-arrow" aria-hidden="true">
-              ↗
-            </span>
+    </a>
 
-          </div>
 
-          <h4 class="about-link-title">
-            Research Experience
-          </h4>
+    <!-- PROJECTS -->
+    <a href="#projects" class="about-link-card">
 
-        </a>
+      <div class="about-link-top">
+        <span class="about-link-category">
+          03 / Innovation
+        </span>
+        <span class="about-link-arrow" aria-hidden="true">↗</span>
+      </div>
 
+      <h4 class="about-link-title">
+        Projects &amp; Initiatives
+      </h4>
 
+    </a>
 
-        <!-- PUBLICATIONS -->
-        <a href="#research" class="about-link-card">
 
-          <div class="about-link-top">
+    <!-- PRESENTATIONS -->
+    <a href="#presentations" class="about-link-card">
 
-            <span class="about-link-category">
-              02 / RESEARCH
-            </span>
+      <div class="about-link-top">
+        <span class="about-link-category">
+          04 / Speaking
+        </span>
+        <span class="about-link-arrow" aria-hidden="true">↗</span>
+      </div>
 
-            <span class="about-link-arrow" aria-hidden="true">
-              ↗
-            </span>
+      <h4 class="about-link-title">
+        Presentations &amp; Panels
+      </h4>
 
-          </div>
+    </a>
 
-          <h4 class="about-link-title">
-            Publications
-          </h4>
 
-        </a>
+    <!-- GRANTS & AWARDS -->
+    <a href="#awards" class="about-link-card">
 
+      <div class="about-link-top">
+        <span class="about-link-category">
+          05 / Recognition
+        </span>
+        <span class="about-link-arrow" aria-hidden="true">↗</span>
+      </div>
 
+      <h4 class="about-link-title">
+        Grants &amp; Honors
+      </h4>
 
-        <!-- PROJECTS -->
-        <a href="#projects" class="about-link-card">
+    </a>
 
-          <div class="about-link-top">
 
-            <span class="about-link-category">
-              03 / Innovation
-            </span>
+    <!-- WRITING -->
+    <a href="#articles" class="about-link-card">
 
-            <span class="about-link-arrow" aria-hidden="true">
-              ↗
-            </span>
+      <div class="about-link-top">
+        <span class="about-link-category">
+          06 / Writing
+        </span>
+        <span class="about-link-arrow" aria-hidden="true">↗</span>
+      </div>
 
-          </div>
+      <h4 class="about-link-title">
+        Writing &amp; Articles
+      </h4>
 
-          <h4 class="about-link-title">
-            Projects &amp; Initiatives
-          </h4>
+    </a>
 
-        </a>
 
+    <!-- NEWS & MEDIA -->
+    <a href="#media" class="about-link-card">
 
+      <div class="about-link-top">
+        <span class="about-link-category">
+          07 / Media
+        </span>
+        <span class="about-link-arrow" aria-hidden="true">↗</span>
+      </div>
 
-        <!-- PRESENTATIONS -->
-        <a href="#presentations" class="about-link-card">
+      <h4 class="about-link-title">
+        News &amp; Media
+      </h4>
 
-          <div class="about-link-top">
+    </a>
 
-            <span class="about-link-category">
-              04 / Speaking
-            </span>
 
-            <span class="about-link-arrow" aria-hidden="true">
-              ↗
-            </span>
+  </nav>
 
-          </div>
+</div>
 
-          <h4 class="about-link-title">
-            Presentations &amp; Panels
-          </h4>
-
-        </a>
-
-
-
-        <!-- GRANTS & AWARDS -->
-        <a href="#awards" class="about-link-card">
-
-          <div class="about-link-top">
-
-            <span class="about-link-category">
-              05 / Recognition
-            </span>
-
-            <span class="about-link-arrow" aria-hidden="true">
-              ↗
-            </span>
-
-          </div>
-
-          <h4 class="about-link-title">
-            Grants &amp; Honors
-          </h4>
-
-        </a>
-
-
-
-        <!-- WRITING -->
-        <a href="#articles" class="about-link-card">
-
-          <div class="about-link-top">
-
-            <span class="about-link-category">
-              06 / Writing
-            </span>
-
-            <span class="about-link-arrow" aria-hidden="true">
-              ↗
-            </span>
-
-          </div>
-
-          <h4 class="about-link-title">
-            Writing &amp; Articles
-          </h4>
-
-        </a>
-
-
-
-        <!-- MEDIA -->
-        <a href="#media" class="about-link-card">
-
-          <div class="about-link-top">
-
-            <span class="about-link-category">
-              07 / Media
-            </span>
-
-            <span class="about-link-arrow" aria-hidden="true">
-              ↗
-            </span>
-
-          </div>
-
-          <h4 class="about-link-title">
-            News &amp; Media
-          </h4>
-
-        </a>
-
-
-      </nav>
-
-    </div>
-
-  </div>
+</div>
 </section>
 
-<!-- ============ RESEARCH EXPERIENCE ============ -->
+
   
 <!-- ============ PUBLICATIONS & RESEARCH CONTRIBUTIONS ============ -->
 <section id="contributions">
