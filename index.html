@@ -48,9 +48,50 @@ a:focus-visible,button:focus-visible{outline:3px solid #bd8799;outline-offset:3p
 .btn.primary:hover{background:#862b46;color:#fff}
 .btn.secondary{color:var(--accent-deep);background:#fff}
 .btn.secondary:hover{background:var(--tint)}
-.portrait{width:215px;height:215px;border:5px solid white;outline:1px solid #f1dae1;border-radius:50%;background:#f7e9ee;display:grid;place-items:center;overflow:hidden;box-shadow:0 8px 25px #68233d12;color:#95516b;font:700 3rem 'Space Grotesk',sans-serif}
+/* Professional portrait */
+.portrait {
+  width: 205px;
+  height: 245px;
+  border: 1px solid #ead6de;
+  border-radius: 12px;
+  background: #f7e9ee;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(70, 35, 48, 0.09);
+  color: #95516b;
+  font: 700 3rem 'Space Grotesk', sans-serif;
+}
+
+/* Portrait image */
+.portrait img {
+  grid-area: 1 / 1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 23%;
+  border-radius: 0;
+  position: relative;
+  z-index: 1;
+}
+
+/* Initials fallback */
+.portrait span {
+  grid-area: 1 / 1;
+  position: relative;
+  z-index: 0;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .portrait {
+    width: 180px;
+    height: 215px;
+  }
+}
+/* .portrait{width:215px;height:215px;border:5px solid white;outline:1px solid #f1dae1;border-radius:50%;background:#f7e9ee;display:grid;place-items:center;overflow:hidden;box-shadow:0 8px 25px #68233d12;color:#95516b;font:700 3rem 'Space Grotesk',sans-serif}
 .portrait img{grid-area:1/1;width:100%;height:100%;object-fit:cover;object-position:center 23%;border-radius:50%}
-.portrait span{grid-area:1/1}
+.portrait span{grid-area:1/1} */
 .chips{display:flex;gap:6px;flex-wrap:wrap;margin-top:17px}
 .chip{padding:3px 9px;border:1px solid #edd9e0;border-radius:99px;background:#fff6f8;color:#843650;font-size:.72rem;font-weight:550}
 .bio{max-width:850px}
